@@ -1,0 +1,32 @@
+1 fps
+2 racing
+3 rts
+4 point and click adventure
+5 sports
+6 visual novel
+7 horror
+8 action
+9 platformer
+10 puzzle
+11 wrpg
+12 jrpg
+13 mmo
+14 fighting
+15 turn based strategy
+
+1 https://store.steampowered.com/app/1229490/ULTRAKILL/
+2 https://store.steampowered.com/app/266410/iRacing/
+3 https://store.steampowered.com/app/813780/Age_of_Empires_II_Definitive_Edition/
+4 https://store.steampowered.com/app/2060130/Return_to_Monkey_Island/
+5 https://store.steampowered.com/app/2669320/EA_SPORTS_FC_25/
+6 https://store.steampowered.com/app/1989270/Slay_the_Princess__The_Pristine_Cut/
+7 https://store.steampowered.com/app/1944430/Amnesia_The_Bunker/
+8 https://store.steampowered.com/app/2183900/Warhammer_40000_Space_Marine_2/
+9 https://store.steampowered.com/app/268910/Cuphead/
+10 https://store.steampowered.com/app/753640/Outer_Wilds/
+11 https://store.steampowered.com/app/1086940/Baldurs_Gate_3/
+12 https://store.steampowered.com/app/2679460/Metaphor_ReFantazio/
+13 https://store.steampowered.com/app/2429640/THRONE_AND_LIBERTY/
+14 https://store.steampowered.com/app/1778820/TEKKEN_8/
+15 https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/
+

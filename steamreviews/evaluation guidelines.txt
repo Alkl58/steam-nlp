@@ -1,0 +1,15 @@
+Ein Review ist als hilfreich einzustufen, wenn:
+
+- es konkrete Details und/oder persönliche Erfahrungen enthält, die mir bei meiner Kaufentscheidung helfen
+
+Beispiele:
+"Runs slow" --> nicht hilfreich, da keine Information, auf welchem System das Spiel läuft
+"Runs slow on an Intel i7-4790K and a GTX 970" --> hilfreich
+
+"Cool game" --> nicht hilfreich, da keine konkreten Informationen
+"Cool game, the art style is really pretty, the soundtrack is amazing and it feels just like playing the original AOE2" --> hilfreich
+
+"Burn the Heretic! Kill the Mutant! Purge the Unclean! in the name of the emperor, let none survive!" --> nicht hilfreich, da es sich hier nur um ein Meme bzw. Zitate aus dem Spiel handelt
+
+WICHTIG: Es soll NICHT die Qualität des Reviews beurteilt werden.
+
