@@ -2,6 +2,7 @@ import requests
 import csv
 import time
 import random
+import re
 from datetime import datetime, timezone
 
 # Function to fetch reviews for a single game
@@ -24,14 +25,45 @@ def fetch_reviews(app_id, cursor='*', num_reviews=100):
         print(f"Failed to fetch reviews for App ID {app_id}: {response.status_code}")
         return None
 
-# Function to save reviews to a CSV file
 
+# Used to detect duplicates
+review_text_list = []
+
+# Function to save reviews to a CSV file
 def save_reviews_to_csv(reviews, file_name, app_id, exclude_phrase=None):
     with open(file_name, 'a', newline='', encoding='utf-8') as csvfile:
         writer = csv.writer(csvfile)
         for review in reviews:
             # Get the review text
             review_text = review.get('review', '')
+
+            # Trim whitespace from start and end of text
+            review_text = review_text.strip()
+
+            # Remove new line characters
+            review_text = review_text.replace('\n', ' ').replace('\r', ' ')
+
+            # Remove repeating whitespace
+            review_text = re.sub(' +', ' ', review_text)
+            
+            # Skip too short reviews
+            if len(review_text) <= 3:
+                print("Review is too short: " + review_text)
+                continue
+
+            # Skip if review doesn't contain any alphabetical character
+            if not re.search('[a-zA-Z]', review_text):
+                print("Review doesn't container alphabetical character: " + review_text)
+                continue
+
+            # Skip duplicate reviews
+            test_string = review_text.lower()
+            if test_string in review_text_list:
+                print("Review already in list")
+                continue
+
+            # Add to list
+            review_text_list.append(test_string)
 
             # Skip reviews containing the exclude_phrase
             if exclude_phrase and exclude_phrase.lower() in review_text.lower():
@@ -51,12 +83,11 @@ def save_reviews_to_csv(reviews, file_name, app_id, exclude_phrase=None):
             # Process weighted_vote_score safely as a float
             weighted_vote_score_raw = review.get('weighted_vote_score', 0)
             weighted_vote_score = round(float(weighted_vote_score_raw), 2) if weighted_vote_score_raw else 0
-
             
             writer.writerow([
                 review.get('recommendationid', ''),
                 app_id,
-                review.get('review', ''),
+                review_text,
                 readable_date,  # Use the converted timestamp
                 playtime_forever, # Use the converted playtime in hours
                 review.get('voted_up', ''),
