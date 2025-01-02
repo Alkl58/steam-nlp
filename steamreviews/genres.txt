@@ -13,6 +13,8 @@
 13 mmo
 14 fighting
 15 turn based strategy
+16 arpg
+17 tactical shooter
 
 1 https://store.steampowered.com/app/1229490/ULTRAKILL/
 2 https://store.steampowered.com/app/266410/iRacing/
@@ -29,4 +31,6 @@
 13 https://store.steampowered.com/app/2429640/THRONE_AND_LIBERTY/
 14 https://store.steampowered.com/app/1778820/TEKKEN_8/
 15 https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/
+16 https://store.steampowered.com/app/2694490/Path_of_Exile_2/
+17 https://store.steampowered.com/app/1144200/Ready_or_Not/
 

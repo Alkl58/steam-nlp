@@ -47,7 +47,7 @@ def save_reviews_to_csv(reviews, file_name, app_id, exclude_phrase=None):
             review_text = re.sub(' +', ' ', review_text)
             
             # Skip too short reviews
-            if len(review_text) <= 3:
+            if len(review_text) <= 5:
                 print("Review is too short: " + review_text)
                 continue
 
