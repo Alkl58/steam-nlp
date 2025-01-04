@@ -1,2 +1,3 @@
 /env
-/steam_review_model
+/training/steam_review_model
+/training/env
